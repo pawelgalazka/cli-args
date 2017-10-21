@@ -1,7 +1,7 @@
 {
   "name": "microargs",
   "version": "1.0.0",
-  "description": "Micro arguments parser",
+  "description": "CLI arguments micro parser",
   "main": "index.js",
   "scripts": {
     "test": "yarn run test:lint && yarn run test:unit",
