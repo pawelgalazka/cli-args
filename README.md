@@ -4,7 +4,7 @@ CLI arguments micro parser (24 lines of code)
 ``` js
 #!/usr/bin/env node
 const args = require('microargs')(process.argv.slice(2));
-console.dir(argv);
+console.dir(args);
 ```
 
 ```
