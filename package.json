@@ -4,7 +4,9 @@
   "description": "Micro arguments parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yarn run test:lint && yarn run test:unit",
+    "test:lint": "eslint *.js",
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/pawelgalazka/microargs/issues"
   },
-  "homepage": "https://github.com/pawelgalazka/microargs#readme"
+  "homepage": "https://github.com/pawelgalazka/microargs#readme",
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
+    "jest": "21.2.1"
+  }
 }
