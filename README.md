@@ -1,5 +1,5 @@
 # microargs ![node version](https://img.shields.io/node/v/microargs.svg) [![Build Status](https://travis-ci.org/pawelgalazka/microargs.svg?branch=master)](https://travis-ci.org/pawelgalazka/microargs) [![npm version](https://badge.fury.io/js/microargs.svg)](https://badge.fury.io/js/microargs)
-CLI arguments micro parser. Only 24 lines of code, no dependencies.
+CLI arguments micro parser. Only 25 lines of code, no dependencies.
 
 ``` js
 #!/usr/bin/env node
