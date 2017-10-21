@@ -1,6 +1,6 @@
 module.exports = (args) => {
   const options = {}
-  const nextArgs = args.filter(arg => {
+  const params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--([\w-.]+)=(\S*)$/) || arg.match(/^--([\w-.]+)$/)
     const singleDashMatch = arg.match(/^-(?!-)([\w-.])=(\S*)$/) || arg.match(/^-(?!-)([\w-.])$/)
 
@@ -18,7 +18,7 @@ module.exports = (args) => {
   })
 
   return {
-    nextArgs,
+    params,
     options
   }
 }
