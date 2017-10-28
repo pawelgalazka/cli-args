@@ -1,6 +1,6 @@
 {
   "name": "microargs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI arguments micro parser",
   "main": "index.js",
   "scripts": {
