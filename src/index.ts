@@ -2,9 +2,16 @@ interface Options {
   [key: string]: number | string | boolean
 }
 
-export default (args: string[]) => {
+type Params = string[]
+
+interface ParsedArgs {
+  params: Params
+  options: Options
+}
+
+export default (args: string[]): ParsedArgs => {
   const options: Options = {}
-  const params = args.filter(arg => {
+  const params: Params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--(\w[\w-.]*)(=(\S+))?$/)
 
     if (doubleDashMatch) {
