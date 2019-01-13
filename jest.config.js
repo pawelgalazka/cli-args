@@ -7,12 +7,13 @@ module.exports = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    "src/*.ts"
+    "<rootDir>/**/*.ts"
   ],
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
-    "text"
+    "text",
+    "text-summary"
   ],
 
   // An object that configures minimum threshold enforcement for coverage results
