@@ -1,5 +1,9 @@
-module.exports = (args) => {
-  const options = {}
+interface Options {
+  [key: string]: number | string | boolean
+}
+
+export default (args: string[]) => {
+  const options: Options = {}
   const params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--(\w[\w-.]*)(=(\S+))?$/)
 
