@@ -8,8 +8,7 @@
     "build": "tsc",
     "test": "yarn lint && jest --coverage",
     "lint": "tslint -c tslint.json 'src/*.ts'",
-    "test:unit": "jest",
-    "precommit": "lint-staged"
+    "test:unit": "jest"
   },
   "lint-staged": {
     "src/*.{ts,tsx}": [

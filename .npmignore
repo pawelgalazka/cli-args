@@ -1,5 +1,6 @@
 *.spec.js
 /src
+/.huskyrc.json
 /.travis.yml
 /.prettierrc.json
 /jest.config.js
