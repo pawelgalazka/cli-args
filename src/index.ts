@@ -1,28 +1,30 @@
-interface Options {
+interface IOptions {
   [key: string]: number | string | boolean
 }
 
 type Params = string[]
 
-interface ParsedArgs {
+interface IParsedArgs {
   params: Params
-  options: Options
+  options: IOptions
 }
 
-export = (args: string[]): ParsedArgs => {
-  const options: Options = {}
+export = (args: string[]): IParsedArgs => {
+  const options: IOptions = {}
   const params: Params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--(\w[\w-.]*)(=(\S+))?$/)
 
     if (doubleDashMatch) {
-      options[doubleDashMatch[1]] = Number(doubleDashMatch[3]) || doubleDashMatch[3] || true
+      options[doubleDashMatch[1]] =
+        Number(doubleDashMatch[3]) || doubleDashMatch[3] || true
       return false
     }
 
     const singleDashMatch = arg.match(/^-(\w)(=(\S+))?$/)
 
     if (singleDashMatch) {
-      options[singleDashMatch[1]] = Number(singleDashMatch[3]) || singleDashMatch[3] || true
+      options[singleDashMatch[1]] =
+        Number(singleDashMatch[3]) || singleDashMatch[3] || true
       return false
     }
 
@@ -30,7 +32,7 @@ export = (args: string[]): ParsedArgs => {
   })
 
   return {
-    params,
-    options
+    options,
+    params
   }
 }
