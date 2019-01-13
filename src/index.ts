@@ -9,7 +9,7 @@ interface IParsedArgs {
   options: IOptions
 }
 
-export = (args: string[]): IParsedArgs => {
+export = (args: Params): IParsedArgs => {
   const options: IOptions = {}
   const params: Params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--(\w[\w-.]*)(=(\S+))?$/)
