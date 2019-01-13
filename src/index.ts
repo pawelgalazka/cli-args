@@ -1,6 +1,17 @@
-module.exports = (args) => {
-  const options = {}
-  const params = args.filter(arg => {
+interface Options {
+  [key: string]: number | string | boolean
+}
+
+type Params = string[]
+
+interface ParsedArgs {
+  params: Params
+  options: Options
+}
+
+export = (args: string[]): ParsedArgs => {
+  const options: Options = {}
+  const params: Params = args.filter(arg => {
     const doubleDashMatch = arg.match(/^--(\w[\w-.]*)(=(\S+))?$/)
 
     if (doubleDashMatch) {
