@@ -1,5 +1,5 @@
 /* eslint-env jest */
-const microargs = require('./index')
+import microargs from './index'
 
 describe('microargs', () => {
   it('parses params', () => {
