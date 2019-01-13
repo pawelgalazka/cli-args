@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/pawelgalazka/microargs#readme",
   "devDependencies": {
-
+    "typescript": "^3.2.2"
   }
 }
