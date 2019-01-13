@@ -1,5 +1,7 @@
 *.spec.js
 /src
 /.travis.yml
-/.eslintrc.json
+/.prettierrc.json
+/jest.config.js
+/tslint.json
 /tsconfig.json
