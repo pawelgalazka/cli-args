@@ -2,7 +2,8 @@
   "name": "microargs",
   "version": "1.1.1",
   "description": "CLI arguments micro parser",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "yarn run test:lint && yarn run test:unit",
