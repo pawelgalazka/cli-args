@@ -1,5 +1,5 @@
 {
-  "name": "microargs",
+  "name": "@pawelgalazka/cli-args",
   "version": "1.1.2",
   "description": "CLI arguments micro parser",
   "main": "./lib/index.js",
@@ -27,6 +27,9 @@
     "parser",
     "minimist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Pawel Galazka",
   "license": "MIT",
   "bugs": {
