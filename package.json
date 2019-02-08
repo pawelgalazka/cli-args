@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pawelgalazka/microargs.git"
+    "url": "git+https://github.com/pawelgalazka/cli-args.git"
   },
   "keywords": [
     "argv",
@@ -33,12 +33,12 @@
   "author": "Pawel Galazka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pawelgalazka/microargs/issues"
+    "url": "https://github.com/pawelgalazka/cli-args/issues"
   },
   "engines": {
     "node": ">=6.16.0"
   },
-  "homepage": "https://github.com/pawelgalazka/microargs#readme",
+  "homepage": "https://github.com/pawelgalazka/cli-args#readme",
   "devDependencies": {
     "@types/jest": "23.3.12",
     "husky": "1.3.1",
