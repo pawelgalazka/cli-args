@@ -3,6 +3,7 @@
 /.huskyrc.json
 /.travis.yml
 /.prettierrc.json
+/.vscode
 /jest.config.js
 /tslint.json
 /tsconfig.json
