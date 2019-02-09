@@ -1,6 +1,6 @@
 {
   "name": "@pawelgalazka/cli-args",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "CLI arguments micro parser",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
